@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import './itemList.css';
-import gotService from '../../services/gotService';
 import Spinner from '../spinner';
 
 export default class ItemList extends Component {
 
-    gotService = new gotService();
-
     state = {
-        charList: null,
+        itemList: null,
         
     };
 
@@ -25,8 +22,9 @@ export default class ItemList extends Component {
 
     renderItems(arr) {
         return arr.map((item) => {
-            const {id} = item;
+            const {id} = item
             const label = this.props.renderItem(item);
+            
             return (
                 <li 
                     key={id}

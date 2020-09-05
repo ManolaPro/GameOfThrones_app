@@ -5,7 +5,7 @@ import RandomChar from '../randomChar';
 import ErrorMessage from '../errorMessage/errorMesage';
 import CharacterPage from '../characterPage'
 import ItemList from '../itemList';
-import CharDetails from '../charDetails';
+import CharDetails from '../itemDetails';
 import gotService from '../../services/gotService';
 
 import './app.css'
